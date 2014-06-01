@@ -11,6 +11,11 @@ But it is unable to find any modules in the local path that mimics the namespace
 Why is that? And is there any way to make the above scenario to work without 
 building and installing `foo-local` as a package?
 
+## Solution
+
+As [keturn](http://www.reddit.com/r/learnpython/comments/271jre/python_namespaces_how_do_they_work/chwowyr) found out, `declaring_namespace` in 
+every `__init__.py` file allows importing from `foo-local`
+
 ## Requirements
 
  * Python 3.4
